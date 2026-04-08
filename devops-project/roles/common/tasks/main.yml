@@ -1,0 +1,11 @@
+- name: Install basic tools (Amazon Linux safe)
+  yum:
+    name:
+      - git
+      - wget
+    state: present
+
+- name: Ensure curl-minimal is present
+  yum:
+    name: curl-minimal
+    state: present
